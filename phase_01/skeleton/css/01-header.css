@@ -1,22 +1,49 @@
 /* PHASE 1: Header */
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  background: #eee;
+
+}
+.header-nav {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
-nav {
-    background-color: #f00;
-    font-size: 24px;
-}
-
-h1 {
-  font-weight: bold;
+.header {
+  background-color: #f00;
   color: #fff;
-  font-size: 24px;
+  border-bottom: 1px solid #ccc;
 }
 
-ul{
-  color: #fff;
-  font-size: 24px;
+.header a {
+  display: block;
+  /*margin-left: 5px;*/
+  padding: 10px 20px;
+}
+.header-logo {
+  font-weight: 700;
+  border-right: 1px solid #ccc;
+
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list > li {
+  border-left: 1px solid #ccc;
+}
+
+.header-list > li:hover {
+  background: #000;
+}
+
+.header-logo:hover {
+  background: #000;
 }
