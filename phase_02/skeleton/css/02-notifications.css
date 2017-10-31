@@ -8,8 +8,17 @@
    padding: 3px 8px;
  }
 
+ .header {
+   position: relative;
+   z-index: 1;
+ }
+
+ li:hover .badge {
+   background: #f00;
+ }
+
  .drop-down {
-   /*display: none;*/
+   display: none;
    position: absolute;
    background: #fff;
    /*color: black;*/
@@ -20,11 +29,19 @@
    font-size: 14px;
    border-bottom-left-radius: 5px;
    border-bottom-right-radius: 5px;
-   /*white-space: nowrap;
-   overflow: hidden;*/
+   white-space: nowrap;
+   /*overflow: hidden;*/
+ }
+
+ li:hover > .drop-down {
+   display: block;
  }
 
  .drop-down > li {
    border-top: 1px solid #ccc;
    color: #000
+ }
+
+ .drop-down > li:hover {
+   background: #eee;
  }
