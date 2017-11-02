@@ -1,1 +1,35 @@
 /* PHASE 4: Footer */
+.footer {
+  /*display: flex;
+  justify-content: space-between;*/
+  width: 900px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  height: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-list {
+  /*display: flex;*/
+  display: flex;
+}
+
+.footer-list a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.footer-list a:hover {
+  color: #000;
+}
+
+.footer-copyright {
+  padding: 10px;
+}
