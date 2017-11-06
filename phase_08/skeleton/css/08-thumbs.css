@@ -21,3 +21,35 @@
   /*content: " (" attr(herf)") ";*/
   margin: 0 10px 10px 10px;
 }
+
+.thumb:before {
+  content: attr(title);
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 65px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.thumb:after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 5px solid #000;
+  top: -10px;
+  border-bottom: 0;
+  border-left: 10px solid transparent;
+  /*border-right: 6px solid transparent;*/
+}
+
+.thumb:hover:before,
+.thumb:hover:after {
+  display: block;
+}
