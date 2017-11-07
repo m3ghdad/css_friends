@@ -46,17 +46,37 @@
   box-shadow: 0 2px 0 0 #070;
 }
 
+.input > input:focus,
+.input > textarea:focus {
+  border-color: #0c0;
+}
+
 .input textarea {
   height: 120px;
 }
 
 .input > label {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   padding: 0 0 5px 0;
 }
 
+.submit > button:hover {
+  background: #0b0;
+}
+
+.submit > button:active {
+  top: 3px;
+  background: #0a0;
+  box-shadow: none;
+}
+
 .button-alternative strong {
   cursor: pointer;
   font-weight: bold;
+}
+
+.button-alternative strong:hover {
+  color: #f00;
 }
