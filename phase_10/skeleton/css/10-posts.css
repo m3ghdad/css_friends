@@ -1,21 +1,54 @@
 /* PHASE 10: Posts */
 .wall {
+  /*border-top: 1px solid gray;
+  padding-top: 15px;*/
+  border-top: 1px solid #ccc;
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}
 
+.wall-thumb {
+  /*float: left;*/
 }
 
 .wall-info {
-
+  /*margin: 0 auto;*/
+  /*padding: 5px;*/
+  /*margin: 0 0 0 20px;*/
+  /*padding: 19px;*/
+  /*float: left;*/
+  float: left;
+  margin: 0 0 0 20px;
+  width: 540px;
 }
 
-.wall-nav {
-
+.wall-info > p {
+  margin: 0 0 20px 0;
 }
 
-.wall-stats {
+/*.wall-info p {
+  margin: 0 auto;
+}*/
 
-}
+/*.wall-nav {
+  margin: 20px 0;
+  display: flex;
+}*/
 
-.wall-info > h2 {
+/*.wall-nav a {
+  display: block;
+  padding: 5px;
+  float: right;
+}*/
+/*.wall-stats a {
+  display: block;
+  padding: 5px;
+  float: left;
+  color: #ccc;
+  font-size: 14px;
+}*/
+
+/*.wall-info > h2 {
   font-weight: 700;
   font-size: 24px;
-}
+}*/
