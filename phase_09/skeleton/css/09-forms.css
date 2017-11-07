@@ -31,7 +31,9 @@
 
 .submit {
   margin-top: 10px;
+  padding-right: 3px;
 }
+
 
 .submit button{
   padding: 5px 10px;
@@ -48,7 +50,13 @@
   height: 120px;
 }
 
-.input label {
+.input > label {
   font-weight: bold;
   font-size: 16px;
+  padding: 0 0 5px 0;
+}
+
+.button-alternative strong {
+  cursor: pointer;
+  font-weight: bold;
 }
