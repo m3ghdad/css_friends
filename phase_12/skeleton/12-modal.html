@@ -217,12 +217,27 @@
     </section>
   </main>
 
-  <body class="modal">
-    <section class="modal-screen">
+  <footer class="footer">
 
-    </section>
+    <small class="footer-copy">
+      &copy; 2014 App Academy. All rights reserved.
+    </small>
 
-    <section class="modal-form">
+    <ul class="footer-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+
+  </footer>
+
+  <div class="modal is-open">
+
+    <form class="modal-form">
+
+      <span class="modal-close js-modal-close">&times;</span>
+
       <div class="welcome">
         <h1>Welcome</h1>
         <small>Please sign in to continue.</small>
@@ -241,26 +256,30 @@
 
       <div class="submit">
         <button>Sign In</button>
-        <span class="button-alternative">or <strong>Cancel</strong></span>
+        <span class="button-alternative">or <strong class="js-modal-close">Cancel</strong></span>
       </div>
-    </section>
+    </form>
 
-  </body>
+    <div class="modal-screen js-model-close"></div>
 
-  <footer class="footer">
+  </div>
 
-    <small class="footer-copy">
-      &copy; 2014 App Academy. All rights reserved.
-    </small>
+  <script src="../shared/js/jquery.js"></script>
+  <script>
+  $(function(){
 
-    <ul class="footer-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Privacy</a></li>
-    </ul>
+    $("body").on("click", ".js-modal-open", function(event){
+      event.preventDefault();
+      $(".modal").addClass("is-open");
+    });
 
-  </footer>
+    $("body").on("click", ".js-modal-close", function(event){
+      event.preventDefault();
+      $(".modal").removeClass("is-open");
+    });
+
+  });
+  </script>
 
 </body>
 </html>
